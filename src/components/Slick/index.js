@@ -3,7 +3,7 @@ import './index.css';
 import Slider from 'react-slick';
 
 import MovieCover from '../MovieCover';
-import movie from '../Content';
+import movieCovers from '../../pages/Home';
 
 export default class SimpleSlider extends Component {
   render() {
@@ -21,14 +21,8 @@ export default class SimpleSlider extends Component {
       <div className="carousel">
         <h1 className="text">Movies</h1>
         <Slider {...settings}>
-          {movie.map(movies => (
-            <MovieCover
-              key={movies.url}
-              title={movies.title}
-              url={movies.url}
-              rating={movies.rating}
-              coverImage={movies.coverImage}
-            />
+          {movieCovers.map(() => (
+            <MovieCover />
           ))}
         </Slider>
       </div>

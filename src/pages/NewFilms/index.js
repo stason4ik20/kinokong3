@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SimpleSlider from '../../components/Slick';
 
 class New extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class New extends Component {
     return (
       <div>
         <h1>New Films !!</h1>
+        <SimpleSlider />
       </div>
     );
   }

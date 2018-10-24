@@ -11,9 +11,7 @@ class MovieCover extends PureComponent {
     return (
       <div className="movie-cover">
         <figure>
-          <h2 className="title">
-            <strong>{title}</strong>
-          </h2>
+          <h2 className="title">{title}</h2>
           <img className="img-responsive" src={coverImage} alt={title} width="100%" />
           <Rating rating={rating} />
           <a href={url}>Online</a>

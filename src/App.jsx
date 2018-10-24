@@ -7,6 +7,7 @@ import config from './components/config';
 import Serials from './pages/Serials';
 import Home from './pages/Home';
 import NewFilms from './pages/NewFilms';
+import SimpleSlider from './components/Slick';
 
 class App extends Component {
   render() {
